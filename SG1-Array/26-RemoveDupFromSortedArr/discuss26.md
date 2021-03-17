@@ -58,7 +58,6 @@ public:
 * memory : **13.7MB** less than **50.4%**
 
 ```c++
-
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -67,14 +66,9 @@ public:
         
         return nums.size();
     }
-    
-
 };
-
-
 ```
 ### Method 3: two pointer
-
 
 #### algo: 
 > 和[283]一樣使用快慢雙指針，將非重複值往前覆蓋，有點類似unique函式的做法。 
@@ -84,17 +78,12 @@ class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         
-        if(nums.size() <= 1) return nums.size();
-        
-        
-        int i=0,j=0;
-        
+        if(nums.size() <= 1) return nums.size();  
+        int i=0,j=0;   
         while(j < nums.size() ){
-            
             if(nums[i] != nums[j]){
                 i++;
-                nums[i] = nums[j];
-                
+                nums[i] = nums[j];       
             }
             j++;
         }
