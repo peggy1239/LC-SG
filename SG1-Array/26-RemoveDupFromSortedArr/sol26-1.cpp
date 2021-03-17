@@ -9,7 +9,6 @@ public:
         int prev = *it;
         
         
-        
         for( it = nums.begin()+1; it != nums.end();  ){
             
             if(prev ==  *it) {
