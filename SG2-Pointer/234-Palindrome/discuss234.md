@@ -20,6 +20,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
@@ -41,6 +43,13 @@ public:
 };
 ```
 
+### Method 2 : a little tricky
+
+#### algo: 
+> 運用快慢指針（一個一次
+
+* runtime: faster than **5.77%** 
+* memory : less than **5.63%**
 
 ```c++
 /**
